@@ -1,0 +1,72 @@
+best_params = {
+    'adam': {
+        'lr': 0.001,
+        'weight_decay': 1.0,
+        'b1': 0.9,
+        'b2': 0.99,
+        'command': '--model.optimizer adam',
+    },
+    'signum': {
+        'lr': 0.000177,
+        'weight_decay': 3.162,
+        'b1': 0.9,
+        'b2': 0,
+        'command': '--model.optimizer signum',
+    },
+    'muon': {
+        'lr': 0.007704,
+        'weight_decay': 0.1,
+        'b1': 0.9,
+        'b2': 0,
+        'command': '--model.optimizer muon',
+    },
+    'adamuon': {
+        'lr': 0.000312,
+        'weight_decay': 3.162,
+        'b1': 0.968,
+        'b2': 0.99,
+        'command': '--model.optimizer adamuon',
+    },
+    'soap10': {
+        'lr': 0.00311,
+        'weight_decay': 0.316,
+        'b1': 0.968,
+        'b2': 0.99,
+        'command': '--model.optimizer soap --model.optimizer_freq 10',
+    },
+    'soap100': {
+        'lr': 0.00175,
+        'weight_decay': 0.316,
+        'b1': 0.9,
+        'b2': 0.99,
+        'command': '--model.optimizer soap --model.optimizer_freq 100',
+    },
+    'splus10': {
+        'lr': 0.1,
+        'weight_decay': 0.01,
+        'b1': 0.99,
+        'b2': 0.968,
+        'command': '--model.optimizer splus --model.optimizer_freq 10',
+    },
+    'splus100': {
+        'lr': 0.1,
+        'weight_decay': 0.01,
+        'b1': 0.99,
+        'b2': 0.968,
+        'command': '--model.optimizer splus --model.optimizer_freq 100',
+    },
+    'shampoo10': {
+        'lr': 0.00132,
+        'weight_decay': 1.0,
+        'b1': 0.9,
+        'b2': 0.99,
+        'command': '--model.optimizer shampoo --model.optimizer_freq 10',
+    },
+    'psgd': {
+        'lr': 0.000264,
+        'weight_decay': 0.001,
+        'b1': 0.968,
+        'b2': 0,
+        'command': '--model.optimizer psgd',
+    }
+}
